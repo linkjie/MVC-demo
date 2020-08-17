@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+* li {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  height: 50vh;
+  width: 50vw;
+  border: 1px solid black;
+}
+
+.app1 button {
+  width: 40px;
+  margin-left: 10px;
+}
+.app1 .number {
+  margin-left: 10px;
+}
+
+.app2 {
+  display: flex;
+  flex-direction: column;
+}
+.app2 .tab-nav {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+}
+.app2 > .tab-nav {
+  display: flex;
+}
+.app2 > .tab-nav > li {
+  width: 50%;
+  border: 1px solid black;
+}
+.app2 > .tab-nav > li.active {
+  background-color: burlywood;
+}
+.app2 > .tab-content {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+.app2 > .tab-content > li {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.app2 > .tab-content > li.show:first-child {
+  background-color: blue;
+}
+.app2 > .tab-content > li.show:last-child {
+  background-color: red;
+}
+.app2 > .tab-content > li.show {
+  transform: translateY(0);
+}
+
+.app3 div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: all 1s;
+}
+.app3 div.move {
+  margin-left: 300px;
+}
+
+.app4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app4 div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  transition: all 1s;
+}
+
+@keyframes active {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+.app4 div.change {
+  animation: active 2s infinite alternate linear;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

@@ -1,0 +1,11 @@
+{
+  "name": "MVC-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "reset.css": "^2.0.2",
+    "style.css": "^1.0.0"
+  }
+}

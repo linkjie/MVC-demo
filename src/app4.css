@@ -1,0 +1,24 @@
+.app4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app4 div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  transition: all 1s;
+}
+
+@keyframes active {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}
+.app4 div.change {
+  animation: active 2s infinite alternate linear;
+}

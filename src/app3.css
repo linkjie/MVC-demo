@@ -1,0 +1,11 @@
+.app3 div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: all 1s;
+}
+.app3 div.move {
+  margin-left: 300px;
+}
